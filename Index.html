@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Nawal Plaza | Contemporary Stay in Shahganj</title>
+  <!-- Modern Editorial & Sans Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#121214',
+            surface: '#1a1a1e',
+            card: '#222228',
+            terracotta: '#E06D53',
+            terracottaHover: '#d0593e',
+            cream: '#F5F2EB',
+            warmMuted: '#A09D95'
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #121214;
+      color: #F5F2EB;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .font-serif-luxury {
+      font-family: 'Cinzel', serif;
+    }
+    /* Smooth Transitions */
+    .tab-btn.active {
+      background-color: #E06D53;
+      color: #121214;
+      font-weight: 700;
+    }
+    .smooth-fade {
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    /* Safe Area aware bottom spacing for mobile navigation bars */
+    .mobile-floating-dock {
+      bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    }
+  </style>
+</head>
+<body class="selection:bg-terracotta selection:text-espresso pb-36 md:pb-12">
+
+  <!-- Floating Glass Capsule Header -->
+  <div class="fixed top-4 inset-x-0 z-50 px-4 max-w-4xl mx-auto">
+    <header class="bg-surface/85 backdrop-blur-xl border border-white/10 rounded-full px-5 py-3 flex items-center justify-between shadow-2xl">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-terracotta animate-pulse"></span>
+        <div>
+          <span class="font-serif-luxury tracking-widest text-xs uppercase font-bold text-cream block leading-tight">NAWAL PLAZA</span>
+          <span class="text-[9px] uppercase tracking-wider text-warmMuted font-medium">Shahganj • Boutique Hotel</span>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-2">
+        <a href="#rooms" class="hidden sm:inline-block text-xs font-semibold text-warmMuted hover:text-cream px-3 py-1.5 transition">Rooms</a>
+        <a href="tel:8756830353" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-cream text-xs font-semibold px-3.5 py-1.5 rounded-full border border-white/10 transition">
+          <svg class="w-3 h-3 text-terracotta" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+          <span class="hidden xs:inline">8756830353</span>
+          <span class="xs:hidden">Call</span>
+        </a>
+        <a href="https://wa.me/918756830353?text=Namaste%2C%20I%20want%20to%20book%20a%20room%20at%20Hotel%20Nawal%20Plaza%20Shahganj" 
+           class="inline-flex items-center gap-1.5 bg-terracotta hover:bg-terracottaHover text-espresso text-xs font-bold px-3.5 py-1.5 rounded-full transition shadow-lg shadow-terracotta/20">
+          <span>Book Stay</span>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <!-- Editorial Hero Section -->
+  <section class="pt-28 md:pt-36 px-4 max-w-4xl mx-auto">
+    <div class="border-b border-white/10 pb-10">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-terracotta text-xs font-semibold uppercase tracking-widest">Est. Shahganj • Newly Opened</span>
+        <span class="w-8 h-[1px] bg-terracotta/40"></span>
+      </div>
+      
+      <h1 class="font-serif-luxury text-3xl sm:text-5xl md:text-6xl text-cream font-bold leading-tight tracking-tight uppercase mb-6">
+        A Refined Stay, <br class="hidden sm:block">
+        <span class="italic text-terracotta font-normal lowercase font-serif">crafted for</span> Peace & Ease.
+      </h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+        <p class="text-warmMuted text-sm md:col-span-2 leading-relaxed">
+          Shahganj's newest boutique destination built for business travelers, wedding entourages, and family comfort. Fully air-conditioned sanctuaries, generator-backed reliability, and warm hospitality right in the heart of town.
+        </p>
+        <div class="flex items-center gap-4 text-xs text-warmMuted">
+          <div class="border-l border-terracotta/50 pl-3">
+            <span class="block text-cream font-bold text-base">24/7</span>
+            <span>Uninterrupted Power</span>
+          </div>
+          <div class="border-l border-terracotta/50 pl-3">
+            <span class="block text-cream font-bold text-base">Central</span>
+            <span>Easy Transit Access</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Room Showcase (Tabs + Dynamic Switcher) -->
+  <section class="py-12 px-4 max-w-4xl mx-auto" id="rooms">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+      <div>
+        <span class="text-[11px] font-bold text-terracotta uppercase tracking-widest">Curated Spaces</span>
+        <h2 class="font-serif-luxury text-2xl sm:text-3xl text-cream uppercase font-bold mt-1">Select Your Room</h2>
+      </div>
+
+      <!-- Segmented Control Tab Switcher -->
+      <div class="inline-flex bg-surface p-1 rounded-xl border border-white/10" id="roomTabs">
+        <button onclick="switchRoom('deluxe')" id="tab-deluxe" class="tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium transition">
+          Deluxe AC
+        </button>
+        <button onclick="switchRoom('super')" id="tab-super" class="tab-btn text-warmMuted px-3.5 py-1.5 rounded-lg text-xs font-medium transition hover:text-cream">
+          Super Deluxe
+        </button>
+        <button onclick="switchRoom('standard')" id="tab-standard" class="tab-btn text-warmMuted px-3.5 py-1.5 rounded-lg text-xs font-medium transition hover:text-cream">
+          Standard Comfort
+        </button>
+      </div>
+    </div>
+
+    <!-- Dynamic Showcase Card -->
+    <div class="bg-surface border border-white/10 rounded-3xl p-4 sm:p-6 shadow-2xl relative overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+        
+        <!-- Room Visual Preview -->
+        <div class="md:col-span-7 relative rounded-2xl overflow-hidden aspect-[4/3] bg-card">
+          <img id="roomImg" 
+               src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80" 
+               alt="Room Preview" 
+               class="w-full h-full object-cover smooth-fade">
+          <div class="absolute bottom-3 left-3 bg-espresso/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-[11px] text-cream font-medium">
+            <span id="roomTag">Best For Solo & Couples</span>
+          </div>
+        </div>
+
+        <!-- Room Specs & Booking Action -->
+        <div class="md:col-span-5 flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-baseline justify-between mb-2">
+              <h3 id="roomTitle" class="font-serif-luxury text-2xl text-cream font-bold">Deluxe AC Room</h3>
+              <span id="roomBadge" class="text-terracotta text-xs font-bold tracking-wider uppercase">High Comfort</span>
+            </div>
+            
+            <p id="roomDesc" class="text-warmMuted text-xs sm:text-sm leading-relaxed mb-5">
+              Crisp white sheets, silent inverter cooling, high-speed connectivity, and an attached spotless washroom tailored for peaceful downtime.
+            </p>
+
+            <!-- Amenities Pills -->
+            <div class="space-y-2 mb-6">
+              <span class="text-[10px] uppercase font-bold tracking-wider text-warmMuted block">Included Features:</span>
+              <div class="flex flex-wrap gap-1.5" id="roomPills">
+                <span class="px-2.5 py-1 rounded-lg bg-card text-cream text-[11px] border border-white/5">Split AC</span>
+                <span class="px-2.5 py-1 rounded-lg bg-card text-cream text-[11px] border border-white/5">High-Speed Wi-Fi</span>
+                <span class="px-2.5 py-1 rounded-lg bg-card text-cream text-[11px] border border-white/5">Attached Bath</span>
+                <span class="px-2.5 py-1 rounded-lg bg-card text-cream text-[11px] border border-white/5">Smart TV</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Inquiries Action -->
+          <div class="space-y-2 pt-4 border-t border-white/10">
+            <a id="roomWaBtn" 
+               href="https://wa.me/918756830353?text=Namaste%2C%20I%20want%20to%20reserve%20a%20Deluxe%20AC%20Room%20at%20Hotel%20Nawal%20Plaza." 
+               class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-terracotta hover:bg-terracottaHover text-espresso font-bold text-xs uppercase tracking-wider transition shadow-lg shadow-terracotta/20">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.174.449.741.964 1.2 1.091.972 1.345 1.077 1.547 1.164.202.087.32.072.435-.058.115-.13.491-.572.622-.767.13-.195.26-.162.433-.098.173.065 1.099.518 1.287.612.188.094.313.14.36.219.047.079.047.458-.097.863z"/></svg>
+              <span>Instant Reserve On WhatsApp</span>
+            </a>
+            <div class="flex items-center justify-between text-[11px] text-warmMuted pt-1">
+              <span>Direct Reception desk</span>
+              <a href="tel:8756830353" class="text-terracotta font-semibold hover:underline">Call 8756830353</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Pillars (Why Stay Here) -->
+  <section class="py-8 px-4 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      
+      <div class="p-5 rounded-2xl bg-surface border border-white/5">
+        <span class="text-terracotta text-lg font-serif-luxury font-bold block mb-2">01 / Power</span>
+        <h4 class="text-cream text-sm font-semibold mb-1">Heavy Generator Backup</h4>
+        <p class="text-warmMuted text-xs leading-relaxed">
+          Zero interruptions in air conditioning or hot water, regardless of city outages.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-surface border border-white/5">
+        <span class="text-terracotta text-lg font-serif-luxury font-bold block mb-2">02 / Cleanliness</span>
+        <h4 class="text-cream text-sm font-semibold mb-1">Freshly Laundered Linens</h4>
+        <p class="text-warmMuted text-xs leading-relaxed">
+          Each room undergoes deep cleaning with freshly sanitized sheets and germ-free bathware.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-surface border border-white/5">
+        <span class="text-terracotta text-lg font-serif-luxury font-bold block mb-2">03 / Accessibility</span>
+        <h4 class="text-cream text-sm font-semibold mb-1">Heart of Shahganj</h4>
+        <p class="text-warmMuted text-xs leading-relaxed">
+          Walking distance from local markets and quick rickshaw ride to Shahganj Junction.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reach & Contact Section -->
+  <section class="py-12 px-4 max-w-4xl mx-auto" id="location">
+    <div class="bg-card/70 border border-white/10 rounded-3xl p-6 sm:p-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        
+        <div>
+          <span class="text-[11px] font-bold text-terracotta uppercase tracking-widest">Connect Directly</span>
+          <h3 class="font-serif-luxury text-2xl text-cream font-bold mt-1 mb-3">Hotel Nawal Plaza</h3>
+          <p class="text-warmMuted text-xs sm:text-sm leading-relaxed mb-6">
+            Shahganj, Jaunpur, Uttar Pradesh.<br>
+            Bookings open for individual travelers, family gatherings, and wedding guest blocks.
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 text-xs">
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-terracotta font-bold">1</span>
+              <div>
+                <span class="text-warmMuted block text-[10px] uppercase">Primary Desk</span>
+                <a href="tel:8756830353" class="text-cream font-bold text-sm hover:text-terracotta transition">8756830353</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-xs">
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-terracotta font-bold">2</span>
+              <div>
+                <span class="text-warmMuted block text-[10px] uppercase">Secondary Desk</span>
+                <a href="tel:8948604265" class="text-cream font-bold text-sm hover:text-terracotta transition">8948604265</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location Badge & Maps Direct Pin -->
+        <div class="bg-espresso/90 border border-white/10 rounded-2xl p-5 text-center">
+          <div class="w-12 h-12 rounded-full bg-terracotta/20 text-terracotta flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          </div>
+          <h4 class="text-cream font-bold text-sm mb-1">Easy Navigation</h4>
+          <p class="text-warmMuted text-xs mb-4">Easily locate the hotel via Google Maps navigation</p>
+          <a href="https://maps.google.com/?q=Hotel+Nawal+Plaza+Shahganj+Jaunpur" target="_blank"
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-cream text-xs font-semibold border border-white/10 transition">
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Editorial Footer -->
+  <footer class="text-center py-6 text-warmMuted text-xs border-t border-white/5 mb-8 md:mb-0">
+    <p class="font-serif-luxury uppercase tracking-widest text-[11px] text-cream">HOTEL NAWAL PLAZA • SHAHGANJ</p>
+    <p class="mt-1 text-[10px] opacity-70">Dedicated Room Reservations & Guest Assistance</p>
+  </footer>
+
+  <!-- Mobile Fixed Booking Bar (Lifted above system navigation bar) -->
+  <div class="fixed mobile-floating-dock inset-x-4 z-50 md:hidden flex gap-2.5 max-w-md mx-auto pointer-events-auto">
+    <a href="tel:8756830353" 
+       class="flex-1 flex items-center justify-center gap-2 py-3.5 px-3 rounded-full bg-surface/95 backdrop-blur-md border border-white/20 text-cream font-bold text-xs shadow-2xl active:scale-95 transition-transform">
+      <svg class="w-3.5 h-3.5 text-terracotta flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+      <span>Call Reception</span>
+    </a>
+    <a href="https://wa.me/918756830353?text=Namaste%2C%20I%20want%20to%20inquire%20about%20room%20availability%20at%20Hotel%20Nawal%20Plaza." 
+       class="flex-1 flex items-center justify-center gap-2 py-3.5 px-3 rounded-full bg-terracotta hover:bg-terracottaHover text-espresso font-extrabold text-xs uppercase tracking-wider shadow-2xl shadow-terracotta/30 active:scale-95 transition-transform">
+      <span>Book Room</span>
+    </a>
+  </div>
+
+  <!-- Interactive Room Data Switcher Script -->
+  <script>
+    const roomData = {
+      deluxe: {
+        title: "Deluxe AC Room",
+        badge: "Most Popular",
+        tag: "Best For Solo & Couples",
+        desc: "Crisp sanitized sheets, silent inverter split AC, uninterrupted power backup, and an attached modern washroom tailored for peaceful downtime.",
+        img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80",
+        pills: ["Inverter AC", "Free Wi-Fi", "Attached Bath", "LED TV", "Room Service"],
+        waMsg: "Namaste, I want to reserve a Deluxe AC Room at Hotel Nawal Plaza."
+      },
+      super: {
+        title: "Super Deluxe Suite",
+        badge: "Extra Spacious",
+        tag: "Perfect For Families & Long Stays",
+        desc: "King-sized bed arrangement, generous carpet area, dedicated work corner, luxury ambient lighting, and 24/7 hot water supply.",
+        img: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80",
+        pills: ["King Bed", "Premium Decor", "Smart Android TV", "In-room Dining", "Geyser 24/7"],
+        waMsg: "Namaste, I want to reserve a Super Deluxe Suite at Hotel Nawal Plaza."
+      },
+      standard: {
+        title: "Standard Comfort",
+        badge: "Budget Friendly",
+        tag: "Convenient & Clean",
+        desc: "Clean, budget-conscious comfort with fresh bedding, ceiling fan ventilation, modern sanitary fixtures, and 24-hour reception service.",
+        img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=80",
+        pills: ["Ventilated Room", "Sanitized Washroom", "High-speed Wi-Fi", "Daily Housekeeping"],
+        waMsg: "Namaste, I want to reserve a Standard Comfort room at Hotel Nawal Plaza."
+      }
+    };
+
+    function switchRoom(key) {
+      // Toggle button active states
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.add('text-warmMuted');
+      });
+      const activeBtn = document.getElementById('tab-' + key);
+      activeBtn.classList.add('active');
+      activeBtn.classList.remove('text-warmMuted');
+
+      // Update content
+      const data = roomData[key];
+      const img = document.getElementById('roomImg');
+      
+      // Gentle fade effect
+      img.style.opacity = '0';
+      setTimeout(() => {
+        img.src = data.img;
+        img.style.opacity = '1';
+      }, 150);
+
+      document.getElementById('roomTitle').innerText = data.title;
+      document.getElementById('roomBadge').innerText = data.badge;
+      document.getElementById('roomTag').innerText = data.tag;
+      document.getElementById('roomDesc').innerText = data.desc;
+
+      // Update amenities pills
+      const pillsContainer = document.getElementById('roomPills');
+      pillsContainer.innerHTML = '';
+      data.pills.forEach(pill => {
+        const span = document.createElement('span');
+        span.className = 'px-2.5 py-1 rounded-lg bg-card text-cream text-[11px] border border-white/5';
+        span.innerText = pill;
+        pillsContainer.appendChild(span);
+      });
+
+      // Update WhatsApp link with prefilled room name
+      document.getElementById('roomWaBtn').href = `https://wa.me/918756830353?text=${encodeURIComponent(data.waMsg)}`;
+    }
+  </script>
+</body>
+</html>
+```
